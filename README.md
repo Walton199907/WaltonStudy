@@ -10,7 +10,7 @@ Hello,这是王翊同的github学习记录天地
 - [x]  | 现代谱估计
 - [ ]  | 自适应滤波
 
-|Author|王翊同|
+|Author|王翊同_Walton|
 |---|---
 |E-mail|yitongwang596@gmail.com / 310665262@qq.com
 
