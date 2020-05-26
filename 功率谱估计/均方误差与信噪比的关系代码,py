@@ -1,0 +1,29 @@
+N = 100
+s1 = [i for i in range(0,100)]
+mean1 = [0 for i in range(0,150)]
+snr = np.arange(-30,0,0.2)
+x = np.linspace(1,N,N)
+f1 = 0.1
+f2 = 0.25
+a = 10*sin(2*pi*f1 * x + pi/3) + 2*sin(2*pi*f2 * x + pi/4)
+plt.rcParams['font.sans-serif']=['SimHei']
+def awgn(x,snr):
+    SNR = 10**(snr/10.0)
+    xpower = np.sum(x**2)/len(x)
+    npower = xpower/SNR
+    return np.random.randn(len(x))*np.sqrt(npower)
+k = np.arange(1,N)
+f = k/N
+for t in range(0,150):
+    for i in range(0,100):
+        y = a+awgn(a,snr[t])
+        Y = np.fft.fft(y)
+        Y = np.abs(Y)
+        f1 = Y.tolist().index(max(Y[0:600]))/N
+        s1[i] = (f1-0.1)**2
+    mean1[t] = np.sum(s1)/1000
+plt.figure(1)
+plt.plot(snr,mean1)
+plt.xlabel('xnr')
+plt.ylabel('MSE')
+plt.show()
