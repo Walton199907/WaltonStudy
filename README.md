@@ -6,8 +6,8 @@ Hello,这是王翊同的github学习记录天地
 
  |Current Unfinished Assignments :thumbsup:
  |---
-- [ ]  | 经典谱估计
-- [ ]  | 现代谱估计
+- [x]  | 经典谱估计
+- [x]  | 现代谱估计
 - [ ]  | 自适应滤波
 
 |Author|王翊同|
