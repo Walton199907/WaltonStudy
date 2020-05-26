@@ -13,3 +13,7 @@ Hello,这是王翊同的github学习记录天地
 |Author|王翊同|
 |---|---
 |E-mail|yitongwang596@gmail.com / 310665262@qq.com
+
+### 功率谱估计:books:
+#### 经典谱估计：
+* [周期图法谱估计](/功率谱估计/经典谱估计/) 
